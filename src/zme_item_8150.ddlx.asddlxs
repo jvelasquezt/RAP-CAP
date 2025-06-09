@@ -1,0 +1,104 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: {
+    typeName: 'Item',
+    typeNamePlural: 'Items',
+    title: {
+        type: #STANDARD,
+        value: 'IdItem'
+            }
+},
+presentationVariant: [{
+    sortOrder: [{
+        by: 'IdItem',
+        direction: #ASC
+    }]
+}]
+}
+
+annotate entity ZC_C_ITEM_8150 with
+{
+
+  @UI: { lineItem: [{
+    position: 10,
+    importance: #HIGH}],
+
+    identification: [{ position: 10 }],
+
+    selectionField: [{ position: 10 }]
+    
+  }
+  IdItem;
+
+  @UI: { lineItem: [{
+    position: 20,
+    importance: #HIGH}]
+    }
+  Name;
+
+  @UI: { lineItem: [{
+    position: 30,
+    importance: #HIGH}]
+    }
+  Description;
+
+  @UI: { lineItem: [{
+    position: 40,
+    importance: #MEDIUM}]
+    }
+  Releasedate;
+
+  @UI: { lineItem: [{
+    position: 50,
+    importance: #MEDIUM}]
+    }
+  Discontinueddate;
+
+  @UI: { lineItem: [{
+    position: 60,
+    importance: #HIGH}]
+    }
+  Price;
+
+  @UI: { lineItem: [{
+    position: 70,
+    importance: #MEDIUM}]
+    }
+  CurrencyCode;
+
+  @UI: { lineItem: [{
+    position: 80,
+    importance: #MEDIUM}]
+    }
+  Height;
+
+  @UI: { lineItem: [{
+    position: 90,
+    importance: #MEDIUM}]
+    }
+  Width;
+
+  @UI: { lineItem: [{
+    position: 100,
+    importance: #MEDIUM}]
+    }
+  Depth;
+
+  @UI: { lineItem: [{
+    position: 110,
+    importance: #MEDIUM}]
+    }
+  Quantity;
+
+  @UI: { lineItem: [{
+    position: 120,
+    importance: #MEDIUM}]
+    }
+  UnitOfMeasure;
+  
+  @UI: { lineItem: [{
+      position: 130,
+      importance: #MEDIUM}]
+      }
+     _Header;
+
+}
